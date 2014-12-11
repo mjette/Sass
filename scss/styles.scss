@@ -1,0 +1,59 @@
+$textColor: #ECF0F1;
+$headerFont: Helvetica, sans-serif;
+$midBlue: #3498DB;
+$subFont: Times New Roman, serif;
+$upperCase: uppercase;
+$padding: 5px 30px 5px 25px;
+$listPadding: 0px 30px 0px 60px;
+$borderRadiusBig: 25px;
+$borderRadiusSmall: 5px;
+$red: #E74C3C;
+$dark: #2C3E50;
+$margin: 15px 0px 15px 0px;
+
+@import "reset";
+@import "type";
+@import "layout";
+
+img {width:95%; border-radius: $borderRadiusBig;}
+
+nav {
+    background-color: $midBlue;
+
+    color: $dark;
+
+    width: 240px;
+
+    padding: 5px;
+
+    border-radius: $borderRadiusSmall;
+
+    ul li a:link, a:visited {color: $dark; list-style-type: none; text-decoration: none;}
+
+   	ul {font-size: 1em; padding: 5px 0px 5px 0px; text-align: center;}
+
+    li {display: inline; font-family: $headerFont; text-transform: $upperCase; font-weight: bold; padding: 0px 5px 0px 5px;}
+}
+
+
+h1 {color:$textColor; font-family: $headerFont; text-transform: $upperCase; padding: 10px 10px 0px 0px;}
+h2 {color:$textColor; font-family: $headerFont; font-size: 20px; padding: 10px 10px 10px 5px;}
+h3 {color:$textColor; font-family: $subFont; font-size: 16px; padding: $padding;}
+ol {color:$textColor; text-decoration: underline; padding: $listPadding;}
+
+
+p {color:$textColor; font-family: $subFont; padding: $padding;}
+
+
+section {
+	h1 {color: $red; background-color: $textColor; border-radius: $borderRadiusSmall; margin: $margin; width: 620px; padding: 10px;}
+}
+
+article {background-color: $midBlue; border-radius: $borderRadiusSmall; margin: $margin;
+
+    ul {list-style: disc;font-size: 1em;} 
+
+}
+ul {color:$textColor; padding: $listPadding;}
+
+
